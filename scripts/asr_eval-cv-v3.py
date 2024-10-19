@@ -46,15 +46,7 @@ def load_models():
                     models[model_name]["processor"] = Wav2Vec2Processor.from_pretrained("facebook/wav2vec2-large-960h")
                 elif model_name == "wavlm":
                     models[model_name]["model"] = WavLMForCTC.from_pretrained("patrickvonplaten/wavlm-libri-clean-100h-large").to(device)
-                    # Choose one of the following processors
-                    # models[model_name]["processor"] = Wav2Vec2Processor.from_pretrained("microsoft/wavlm-large")
-                    # models[model_name]["processor"] = Wav2Vec2Processor.from_pretrained("facebook/wav2vec2-large-960h")
                     models[model_name]["processor"] = Wav2Vec2Processor.from_pretrained("patrickvonplaten/wavlm-libri-clean-100h-large")
-                    # Or, if you want to use a feature extractor
-                    # models[model_name]["processor"] = Wav2Vec2FeatureExtractor.from_pretrained("microsoft/wavlm-large")
-                    # models[model_name]["processor"] = Wav2Vec2FeatureExtractor.from_pretrained("microsoft/wavlm-large")
-                    # Or a custom tokenizer if needed
-                    # models[model_name]["processor"] = Wav2Vec2CTCTokenizer.from_pretrained("microsoft/wavlm-large")
                 elif model_name == "whisper":
                     models[model_name]["model"] = WhisperForConditionalGeneration.from_pretrained("openai/whisper-large").to(device)
                     models[model_name]["processor"] = WhisperProcessor.from_pretrained("openai/whisper-large")
