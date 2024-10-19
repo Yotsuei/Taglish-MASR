@@ -17,14 +17,14 @@ Taglish-MASR/
 
 ### Directory Overview
 
-- `data/`: Contains datasets used in the project
-  - `common-voice/`: Subset of Common Voice for ASR evaluation
-  - `raw/`: Contains raw data files
+- `data/`: Folder for project datasets
+  - `common-voice/`: Folder for Common Voice subset for ASR evaluation
+  - `raw/`: Folder for raw dataset for fine-tuning Whisper
 - `proj-env/`: Python virtual environment
-- `scripts/`: Contains misc Python scripts for the project
+- `scripts/`: Misc Python scripts for the project
   - `asr_eval_cv-v3.py`: Script for ASR evaluation
   - `test.py`: Test script
-- `requirements.txt`: Lists project dependencies
+- `requirements.txt`: Project dependencies
 - `Taglish-MASR.code-workspace`: Visual Studio Code workspace configuration file
 
 ## Getting Started
