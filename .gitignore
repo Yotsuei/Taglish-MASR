@@ -2,6 +2,9 @@
 data/common-voice/*
 data/raw/*
 
+# Do not ignore .gitkeep files
+!data/.gitkeep
+
 # Virtual environments
 venv/
 env/
