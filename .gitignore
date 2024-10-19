@@ -1,6 +1,12 @@
-# Exlude folders that has large file size
+# Ignore all files in the data/ folder
 data/*
+data/common-voice/*
+data/raw/*
+
+# Do not ignore .gitkeep files
 !data/.gitkeep
+!data/common-voice/.gitkeep
+!data/raw/.gitkeep
 
 # Virtual environments
 venv/
