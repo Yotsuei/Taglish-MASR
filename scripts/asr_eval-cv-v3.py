@@ -213,7 +213,7 @@ def evaluate_model(model, processor, audio_files, transcripts):
             except Exception as e:
                 print(f"Error evaluating file {audio_file}: {e}\n\n" + "=" * 50 + "\n")
         
-        print(f"Finished evaluating {model.__class__.__name__}.\nResults for the last audio file '{last_audio_file}': '{last_transcription}'\n\n" + "=" * 50 + "\n")
+        print(f"Finished evaluating {model.__class__.__name__}.\n\n" + "=" * 50 + "\n")
         
         # Calculate averages
         if num_samples > 0:
