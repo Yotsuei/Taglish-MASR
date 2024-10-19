@@ -1,0 +1,20 @@
+# Exlude folders that has large file size
+data/*
+!data/.gitkeep
+
+# Virtual environments
+venv/
+env/
+proj-env/
+.proj-env/
+__pycache__/
+
+# Python-specific files
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+
+# VS Code
+.vscode/
+*.code-workspace

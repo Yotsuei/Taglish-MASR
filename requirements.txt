@@ -1,0 +1,21 @@
+# Machine Learning Framework
+torch>=2.0.1+cu126
+torchaudio>=2.0.1+cu126
+transformers>=4.33.2
+
+# Data Processing & Manipulation
+numpy
+pandas
+scikit-learn
+librosa
+soundfile
+
+# Dataset Handling
+datasets
+
+# Model Evaluation & Metrics
+evaluate
+jiwer
+
+# Utilities
+tqdm
