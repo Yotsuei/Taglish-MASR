@@ -247,10 +247,10 @@ if __name__ == "__main__":
         if metrics:  # Check if metrics is not empty
             print(f"WER: {metrics.get('wer', 0) * 100:.2f}%")  # Convert to percentage
             print(f"CER: {metrics.get('cer', 0) * 100:.2f}%")  # Convert to percentage
+            print(f"Accuracy: {metrics.get('accuracy', 0) * 100:.2f}%")  # Convert to percentage
             print(f"Precision: {metrics.get('precision', 0) * 100:.2f}%")  # Convert to percentage
             print(f"Recall: {metrics.get('recall', 0) * 100:.2f}%")  # Convert to percentage
             print(f"F1 Score: {metrics.get('f1_score', 0) * 100:.2f}%")  # Convert to percentage
-            print(f"Accuracy: {metrics.get('accuracy', 0) * 100:.2f}%")  # Convert to percentage
             print(f"Last Transcription: '{metrics.get('last_transcription', 'N/A')}'")  # Print last transcription
             print(f"Last Audio File: '{metrics.get('last_audio_file', 'N/A')}'")  # Print last audio file
             print("\n" + "=" * 50 + "\n")
