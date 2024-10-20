@@ -59,7 +59,7 @@ def load_models():
 
 
 # Load Common Voice dataset (TSV and mp3)
-def load_common_voice_data(tsv_file, audio_dir, max_samples=5):
+def load_common_voice_data(tsv_file, audio_dir, max_samples=100):
     audio_files = []
     transcripts = []
     count = 0  # Initialize a counter for processed files
@@ -234,7 +234,7 @@ if __name__ == "__main__":
     load_models()  # Load models and processors
     audio_dir = "data/common-voice/clips"  # Set your audio directory path
     tsv_file = "data/common-voice/validated.tsv"  # Set your TSV file path
-    audio_files, transcripts = load_common_voice_data(tsv_file, audio_dir, max_samples=5)
+    audio_files, transcripts = load_common_voice_data(tsv_file, audio_dir, max_samples=100)
 
     # Evaluate each model
     results = {}
