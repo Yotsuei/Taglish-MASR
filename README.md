@@ -5,28 +5,23 @@
 ```
 Taglish-MASR/
 ├── data/
-│   ├── common-voice/             # Dataset for initial model training (e.g., x-vector diarization)
-│   ├── evaluation/               # Data for evaluating model performance
-│   ├── training/                 # Main dataset for fine-tuning Whisper model
-│   ├── tuning/                   # Additional tuning data (optional)
-│   └── diarization/              # (Optional) Multi-speaker data for x-vector training
-├── proj-env/                     # Local Python virtual environment (add to .gitignore)
+│   ├── common-voice/               # Common Voice dataset files
+│   ├── evaluation/                 # Evaluation datasets for model testing
+│   ├── training/                   # Training datasets for Whisper and x-vector
+│   └── tuning/                     # Data for hyperparameter tuning
+├── proj-env/                       # Python virtual environment
 ├── scripts/
-│   ├── asr_eval_cv-v3.py         # ASR evaluation script for Whisper model
-│   ├── test.py                   # Basic testing script for function checks
-│   ├── train.py                  # Main training and fine-tuning script for Whisper (Colab/local compatible)
-│   ├── colab_setup.py            # Script to handle Colab-specific setup (e.g., Drive mounting)
-│   ├── data_preprocess.py        # Data preprocessing script (cleaning, formatting, labeling)
-│   ├── train_xvector.py          # X-vector training script for speaker diarization
-│   └── integration_pipeline.py   # Script to combine Whisper ASR and x-vector diarization models
-├── notebooks/
-│   ├── fine_tune_whisper_colab.ipynb    # Colab notebook for Whisper fine-tuning
-│   ├── evaluation_colab.ipynb           # Colab notebook for evaluating final integrated model
-│   └── data_exploration.ipynb           # (Optional) Notebook for exploring and visualizing datasets
-├── README.md                    # Documentation on project setup and usage
-├── requirements.txt             # List of dependencies
-├── .gitignore                   # Exclude large datasets and environment files
-└── Taglish-MASR.code-workspace  # VS Code workspace settings
+│   ├── asr_eval_cv-v3.py           # Evaluation script for ASR
+│   └── test.py                     # Testing script for model validation
+├── notebooks/                      # Directory for Jupyter notebooks
+│   ├── 1_train_whisper.ipynb       # Notebook for training Whisper model
+│   ├── 2_fine_tune_whisper.ipynb   # Notebook for fine-tuning Whisper model
+│   ├── 3_train_x_vector.ipynb      # Notebook for training x-vector model
+│   └── 4_evaluate_models.ipynb     # Notebook for model evaluation
+├── README.md
+├── requirements.txt
+└── Taglish-MASR.code-workspace
+
 
 ```
 
