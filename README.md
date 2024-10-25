@@ -6,7 +6,7 @@
 Taglish-MASR/
 ├── data/
 │   ├── common-voice/
-│   └── raw/
+│   └── training/
 ├── proj-env/
 ├── scripts/
 │   ├── asr_eval_cv-v3.py
@@ -19,7 +19,7 @@ Taglish-MASR/
 
 - `data/`: Folder for project datasets
   - `common-voice/`: Folder for Common Voice subset for ASR evaluation
-  - `raw/`: Folder for raw dataset for fine-tuning Whisper
+  - `training/`: Folder for training dataset for fine-tuning Whisper
 - `proj-env/`: Python virtual environment
 - `scripts/`: Misc Python scripts for the project
   - `asr_eval_cv-v3.py`: Script for ASR evaluation
