@@ -1,11 +1,11 @@
 # Ignore all files in the data/ folder
 data/common-voice/*
-data/raw/*
+data/training/*
 
 # Do not ignore .gitkeep files
 !data/.gitkeep
 !data/common-voice/.gitkeep
-!data/raw/.gitkeep
+!data/training/.gitkeep
 
 # Virtual environments
 venv/
