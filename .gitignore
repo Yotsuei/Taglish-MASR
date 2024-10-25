@@ -1,11 +1,15 @@
 # Ignore all files in the data/ folder
 data/common-voice/*
 data/training/*
+data/evaluation/*
+data/tuning/*
 
 # Do not ignore .gitkeep files
 !data/.gitkeep
 !data/common-voice/.gitkeep
 !data/training/.gitkeep
+!data/evaluation/.gitkeep
+!data/tuning/.gitkeep
 
 # Virtual environments
 venv/
